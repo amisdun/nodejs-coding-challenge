@@ -1,0 +1,4 @@
+node_modules
+angularjs-frontend/.tmp
+.idea
+***/.env

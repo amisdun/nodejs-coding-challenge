@@ -1,0 +1,35 @@
+{
+	"name": "Noode.JS-Coding-Challenge",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "NODE_ENV=development env-cmd --file .env node app.js",
+		"test": "env-cmd --file .env mocha --recursive"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"env-cmd": "^10.1.0",
+		"express": "~4.11.1",
+		"express-bearer-token": "^2.1.0",
+		"express-validator": "^6.13.0",
+		"hash": "^0.2.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongodb": "^2.2.24",
+		"mongoose": "^6.1.0",
+		"uuid": "^3.0.1"
+	},
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"gulp": "^3.9.0",
+		"gulp-concat": "^2.6.0",
+		"gulp-ng-annotate": "^1.1.0",
+		"gulp-sourcemaps": "^1.5.2",
+		"gulp-uglify": "^1.2.0",
+		"gulp-watch": "^4.3.4",
+		"mocha": "^2.4.5",
+		"supertest": "^1.2.0",
+		"supertest-as-promised": "^3.1.0"
+	}
+}
