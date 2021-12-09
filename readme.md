@@ -23,8 +23,8 @@
 * Use any npm library you like
 
 ``` Create a .env file at the root of the folder 
-* Define the following environment variables as follows
-   * MONGODB_URI=
-   * PORT=
-   * JWT_SECRET=
+# Define the following environment variables as follows
+    MONGODB_URI=
+    PORT=
+    JWT_SECRET=
 ```
