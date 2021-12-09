@@ -2,6 +2,7 @@
 
 let assert = require("chai").assert;
 let request = require("supertest-as-promised");
+const { User } = require("../../server/models/user");
 
 let app = require("../../app");
 let _user = "integration_test_" + Math.floor(Date.now() / 1000) + "@alttab.co";
@@ -99,5 +100,8 @@ describe("Profile controller", () => {
 
 	it("should return an error when token is not specified", () => {
 		return request(app).get("/api/profile").expect(401);
+	});
+	after(async function () {
+		await User.deleteMany({});
 	});
 });
